@@ -1,28 +1,53 @@
-body {
-    font-family: "serif";
-    background-color: #f7f9fc;
-    margin: 0;
-    padding: 0;
-    text-align: justify;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --background-color: #262626;
+    --cor-primaria: #e8e8e8;
+    --cor-secundaria: #555555;
+    --fonte-titulo: "Fira Sans", "sans-serif";
+    --fonte-subtitulo: "Playfair Display", "serif";
+    --fonte-texto: "Fira Sans", "serif";    
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "serif";
+    background-color: var(--background-color);
+    color: var(--cor-primaria);
+    text-align: justify;
+    max-width: 80%;
+    padding: 2em 10em;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 2em;
+}
+
+.imagem-perfil {
+    width: 25%;
+    border-radius: 1.5em;
+}
+
+.container__infos {
+    text-align: left;
 }
 
 h1 {
-    font-size: 28px;
-    color: #333;
-    text-align: left;
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    padding: 1em 0 1em 0;
 }
 
 h2 {
     font-size: 24px;
-    color: #333;
     margin-top: 20px;
     border-bottom: 1px solid #cecece; /* Borda inferior */
     padding-bottom: 5px; /* Espaçamento na parte inferior do título */
@@ -30,7 +55,6 @@ h2 {
 
 p {
     font-size: 16px;
-    color: #555;
     margin: 4px;
 }
 
