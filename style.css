@@ -15,17 +15,17 @@
 }
 
 body {
+    font-family: var(--fonte-texto);
     background-color: var(--background-color);
     color: var(--cor-primaria);
     text-align: justify;
-    padding: 2em 10em;
+    padding: 2em 15em;
 }
 
 header {
     text-align: center;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 2em;
 }
 
@@ -41,16 +41,17 @@ header {
 .links {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1em;
 }
 
 .links__item {
-    display: flex;
     color: var(--cor-primaria);
     text-decoration: none;
     border: 1.5px solid var(--cor-primaria);
     border-radius: 5px;
     padding: 0.5em 1em;
+    display: flex;
     gap: 5px;
 }
 
@@ -63,7 +64,7 @@ h1 {
 
 h2 {
     font-family: var(--fonte-subtitulo);
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 1em;
     border-bottom: 1px solid var(--cor-primaria);
     padding-bottom: 0.5em;
@@ -71,13 +72,8 @@ h2 {
 
 p {
     font-family: var(--fonte-texto);
-    font-size: 16px;
+    font-size: 1em;
     margin: 1em;
-}
-
-ul {
-    /*list-style-type: none;*/
-    /*padding: 0;*/
 }
 
 li {
@@ -87,13 +83,50 @@ li {
 .habilidades__lista {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 0 1em;
 }
 
 .habilidade__item {
     border: 1.5px solid var(--cor-primaria);
     border-radius: 5px;
-    padding: 0.8em 1.5em;
+    padding: 0.5em 1em;
     margin-top: 1em;
     list-style-type: none;
+}
+
+.cursos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0 1em;
+}
+
+.cursos__item {
+    color: var(--cor-primaria);
+    border: 1.5px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 1em 2em;
+    margin-top: 1em;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.projetos__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0 1em;
+}
+
+.projetos__item {
+    color: var(--cor-primaria);
+    border: 1.5px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 3em 5em;
+    margin-top: 1em;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
 }
