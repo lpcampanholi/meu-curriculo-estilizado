@@ -62,11 +62,11 @@ h1 {
 }
 
 h2 {
-    font-family: var(--fonte-subtitulo)
+    font-family: var(--fonte-subtitulo);
     font-size: 2em;
     margin-top: 1em;
-    border-bottom: 1px solid var(--cor-primaria); /* Borda inferior */
-    padding-bottom: 0.5em; /* Espaçamento na parte inferior do título */
+    border-bottom: 1px solid var(--cor-primaria);
+    padding-bottom: 0.5em;
 }
 
 p {
