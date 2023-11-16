@@ -31,7 +31,7 @@ header {
 
 .imagem-perfil {
     width: 30%;
-    border-radius: 1.5em;
+    border-radius: 15px;
 }
 
 .container__infos {
@@ -84,6 +84,16 @@ li {
     margin-bottom: 10px;
 }
 
-a:hover {
-    text-decoration: underline;
+.habilidades__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.habilidade__item {
+    border: 1.5px solid var(--cor-primaria);
+    border-radius: 5px;
+    padding: 0.8em 1.5em;
+    margin-top: 1em;
+    list-style-type: none;
 }
