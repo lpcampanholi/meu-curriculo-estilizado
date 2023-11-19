@@ -50,9 +50,13 @@ header {
     gap: 2em;
 }
 
-.imagem-perfil {
+.imagem-perfil-grande {
     width: 20em;
     border-radius: 15px;
+}
+
+.imagem-perfil-circulo {
+    display: none;
 }
 
 .container__infos {
@@ -74,6 +78,7 @@ header {
     padding: 0.5em 1em;
     display: flex;
     gap: 5px;
+    align-items: center;
 }
 
 .links__item:hover {
@@ -161,6 +166,7 @@ a {
     background-color: var(--cor-primaria);
     color: var(--background-color);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -169,17 +175,25 @@ a {
         padding: 2em 2em; 
     }
 
-    .info__pessoais {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    .imagem-perfil-grande {
+        display: none;
     }
 
-    .imagem-perfil {
-        width: 50%;
-        border-radius: 15px;
-        margin: 0 auto;
+    .imagem-perfil-circulo {
+        width: 7em;
+        display:inline-block;
+    }
+
+    .container__imagem-nome {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        margin-bottom: 2em;
+    }
+
+    .container__nome {
+        display: flex;
+        flex-direction: column;
     }
 
 }
