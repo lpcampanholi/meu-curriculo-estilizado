@@ -18,7 +18,7 @@ body {
     font-family: var(--fonte-texto);
     background-color: var(--background-color);
     color: var(--cor-primaria);
-    padding: 2em 15em;
+    padding: 2em 15%;
 }
 
 header {
@@ -117,7 +117,7 @@ i {
 
 .subtitulo {
     font-family: var(--fonte-subtitulo);
-    font-size: 1.5em;
+    font-size: 1em;
     margin-top: 1em;
 }
 
@@ -178,10 +178,6 @@ a {
 
 @media screen and (max-width: 1200px) {
 
-    body {
-        padding: 2em 2em; 
-    }
-
     .imagem-perfil-grande {
         display: none;
     }
@@ -197,11 +193,12 @@ a {
         align-items: center;
         flex-direction: column;
         margin-bottom: 2em;
+        text-align: center;
     }
 
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
 
     .cursos__container, .projetos__container {
         display: flex;
