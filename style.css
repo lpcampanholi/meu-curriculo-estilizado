@@ -199,11 +199,15 @@ a {
         margin-bottom: 2em;
     }
 
+}
+
+@media screen and (max-width: 770px) {
+
     .cursos__container, .projetos__container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 0.6fr));
+        display: flex;
+        flex-direction: column;
         width: 80%;
         margin: 0 auto;
-     }
+    }
 
 }
