@@ -185,7 +185,7 @@ a {
     .imagem-perfil-circulo {
         width: 10em;
         display:inline-block;
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
     .container__imagem-nome {
@@ -198,7 +198,11 @@ a {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 805px) {
+
+    body {
+        padding: 1em 5%;
+    }
 
     .cursos__container, .projetos__container {
         display: flex;
