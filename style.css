@@ -18,7 +18,6 @@ body {
     font-family: var(--fonte-texto);
     background-color: var(--background-color);
     color: var(--cor-primaria);
-    text-align: justify;
     padding: 2em 15em;
 }
 
@@ -63,6 +62,10 @@ header {
     text-align: left;
 }
 
+.container__imagem-nome {
+    margin-bottom: 1em;
+}
+
 .links__container {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +84,10 @@ header {
     align-items: center;
 }
 
+i {
+    margin-bottom: 3.5px;
+}
+
 .links__item:hover {
     background-color: var(--cor-primaria);
     color: var(--background-color);
@@ -89,16 +96,23 @@ header {
 
 .titulo {
     font-family: var(--fonte-titulo);
-    text-align: left;
     font-size: 2.2em;
     padding: 1em 0 0.2em 0;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.nome {
+    font-family: var(--fonte-titulo);
+    font-size: 2.2em;
+    padding-bottom: 0.2em;
+    margin: 0.5em 0 0.2em 0;
     border-bottom: 1px solid var(--cor-secundaria);
 }
 
 .descricao {
     font-family: var(--fonte-subtitulo);
-    font-size: 1.5em;
-    margin-bottom: 1em;
+    font-size: 1.2em;
 }
 
 .subtitulo {
@@ -116,7 +130,6 @@ p {
 .habilidade__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 0 1em;
 }
 
@@ -128,11 +141,11 @@ p {
     list-style-type: none;
 }
 
-.cursos__container {
+.cursos__container, .projetos__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2em 4em;
-}
+    gap: 0em 4em;
+ }
 
 .cursos__item, .projetos__item {
     color: var(--cor-primaria);
@@ -150,12 +163,6 @@ p {
     background-color: var(--cor-primaria);
     color: var(--background-color);
     transition: all 0.3s ease;
-}
-
-.projetos__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0 4em;
 }
 
 a {
@@ -180,20 +187,23 @@ a {
     }
 
     .imagem-perfil-circulo {
-        width: 7em;
+        width: 10em;
         display:inline-block;
+        margin-top: 2em;
     }
 
     .container__imagem-nome {
         display: flex;
         align-items: center;
-        gap: 2em;
+        flex-direction: column;
         margin-bottom: 2em;
     }
 
-    .container__nome {
-        display: flex;
-        flex-direction: column;
-    }
+    .cursos__container, .projetos__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 0.6fr));
+        width: 80%;
+        margin: 0 auto;
+     }
 
 }
