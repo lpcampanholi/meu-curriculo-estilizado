@@ -195,7 +195,6 @@ a {
         margin-bottom: 2em;
         text-align: center;
     }
-
 }
 
 @media screen and (max-width: 805px) {
@@ -214,5 +213,4 @@ a {
     .titulo, .nome {
         font-size: 1.8em;
     }
-
 }
