@@ -84,9 +84,20 @@ header {
     align-items: center;
 }
 
-i {
-    margin-bottom: 3.5px;
+#github-icon [class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: normal;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 .links__item:hover {
     background-color: var(--cor-primaria);
